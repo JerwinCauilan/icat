@@ -8,11 +8,7 @@ const cors = require('cors');
 
 const PORT = process.env.PORT || 3000;
 const app = express();
-app.use(cors({
-  origin: ["https://icat-93eb7.web.app/"],
-  methods: ["POST", "GET"],
-  credentials: true
-}));
+app.use(cors());
 
 
 // EXPRESS MIDDLEWARE 
